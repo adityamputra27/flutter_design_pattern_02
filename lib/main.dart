@@ -59,11 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               height: 20,
             ),
-            AbstractFactory.buildButton(context, 'Hello!', () {}),
+            AbstractFactoryImplement.instance
+                .buildButton(context, 'Click', () {}),
             const SizedBox(
               height: 20,
             ),
-            AbstractFactory.buildIndicator(context),
+            AbstractFactoryImplement.instance.buildIndicator(context),
           ],
         ),
       ),
